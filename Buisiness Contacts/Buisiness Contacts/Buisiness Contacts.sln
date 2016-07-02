@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buisiness Contacts", "Buisiness Contacts\Buisiness Contacts.csproj", "{B26DDF49-B06F-408B-BA92-E11D4E1A5A52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B26DDF49-B06F-408B-BA92-E11D4E1A5A52}.Debug|x86.ActiveCfg = Debug|x86
+		{B26DDF49-B06F-408B-BA92-E11D4E1A5A52}.Debug|x86.Build.0 = Debug|x86
+		{B26DDF49-B06F-408B-BA92-E11D4E1A5A52}.Release|x86.ActiveCfg = Release|x86
+		{B26DDF49-B06F-408B-BA92-E11D4E1A5A52}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

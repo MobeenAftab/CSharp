@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6EB02A17-AEC9-41BA-BCED-1B31FFB71DB4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PLE</RootNamespace>
+    <AssemblyName>PLE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Home.Designer.cs">
+      <DependentUpon>Admin Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculator.Designer.cs">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log in.Designer.cs">
+      <DependentUpon>Log in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverView.Designer.cs">
+      <DependentUpon>OverView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quiz1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz1.Designer.cs">
+      <DependentUpon>Quiz1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz2.Designer.cs">
+      <DependentUpon>Quiz2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz3.Designer.cs">
+      <DependentUpon>Quiz3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz4.Designer.cs">
+      <DependentUpon>Quiz4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz5.Designer.cs">
+      <DependentUpon>Quiz5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizHome.Designer.cs">
+      <DependentUpon>QuizHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Home.Designer.cs">
+      <DependentUpon>Student Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentAcc.Designer.cs">
+      <DependentUpon>StudentAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentOverview.Designer.cs">
+      <DependentUpon>StudentOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test1.Designer.cs">
+      <DependentUpon>Test1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test2.Designer.cs">
+      <DependentUpon>Test2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test3.Designer.cs">
+      <DependentUpon>Test3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestHome.Designer.cs">
+      <DependentUpon>TestHome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin Home.resx">
+      <DependentUpon>Admin Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculator.resx">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log in.resx">
+      <DependentUpon>Log in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverView.resx">
+      <DependentUpon>OverView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Quiz1.resx">
+      <DependentUpon>Quiz1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz2.resx">
+      <DependentUpon>Quiz2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz3.resx">
+      <DependentUpon>Quiz3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz4.resx">
+      <DependentUpon>Quiz4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz5.resx">
+      <DependentUpon>Quiz5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizHome.resx">
+      <DependentUpon>QuizHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Home.resx">
+      <DependentUpon>Student Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentAcc.resx">
+      <DependentUpon>StudentAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentOverview.resx">
+      <DependentUpon>StudentOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test1.resx">
+      <DependentUpon>Test1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test2.resx">
+      <DependentUpon>Test2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test3.resx">
+      <DependentUpon>Test3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestHome.resx">
+      <DependentUpon>TestHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

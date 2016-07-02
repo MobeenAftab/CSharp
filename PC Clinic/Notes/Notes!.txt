@@ -1,0 +1,29 @@
+This is the SQL code for adding clients
+       
+if (txtnewfirst.Text != "" & txtnewlast.Text != "" & txtnewid.Text != "" & txtnewemail.Text != "" & txtnewaddress.Text != "" & txtnewpost.Text != "") //Statement for adding clients
+            {
+                cn.Open();
+                cmd.CommandText = "insert into ticket (FirstName, LastName, CollegeID, Email, Address, Postcode) values ('" + txtnewfirst.Text + "','" + txtnewlast.Text + "','" + txtnewid.Text + "','" + txtnewemail.Text + "','" + txtnewaddress.Text + "','" + txtnewpost.Text + "')";
+                cmd.ExecuteNonQuery();
+
+                cmd.Clone();
+                MessageBox.Show("Inserted");
+                cn.Close();
+                txtnewfirst.Text = "";
+                txtnewlast.Text = "";
+                txtnewid.Text = "";
+                txtnewemail.Text = "";
+                txtnewaddress.Text = "";
+                txtnewpost.Text = "";
+                
+            }
+Ticket
+Field Name - (Textboxes)
+
+StudentID - (txtid)
+tckfirstname - (txtfirst)
+tcktech - (txttech)
+tckdevice - (txtdevice)
+tckpass - (txtpass)
+tckaccepts - (txtaccepts)
+tcknotes - (richtxt)

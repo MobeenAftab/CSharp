@@ -1,0 +1,17 @@
+       if (txtnewfirst.Text != "" & txtnewlast.Text != "" & txtnewid.Text != "" & txtnewemail.Text != "" & txtnewaddress.Text != "" & txtnewpost.Text != "") //Statement for adding clients
+            {
+                cn.Open();
+                cmd.CommandText = "insert into ticket (FirstName, LastName, CollegeID, Email, Address, Postcode) values ('" + txtnewfirst.Text + "','" + txtnewlast.Text + "','" + txtnewid.Text + "','" + txtnewemail.Text + "','" + txtnewaddress.Text + "','" + txtnewpost.Text + "')";
+                cmd.ExecuteNonQuery();
+
+                cmd.Clone();
+                MessageBox.Show("Inserted");
+                cn.Close();
+                txtnewfirst.Text = "";
+                txtnewlast.Text = "";
+                txtnewid.Text = "";
+                txtnewemail.Text = "";
+                txtnewaddress.Text = "";
+                txtnewpost.Text = "";
+                
+            }
