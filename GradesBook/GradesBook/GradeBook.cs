@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,13 @@ namespace GradesBook
 {
     public class GradeBook
     {
+        // Events are based on delegates, only difference is events cannot be
+        // assigned to null, only add or remove subscribers
+        public event NameChangedDelegate NameChanged;
+
+        private List<float> grades;
+        private string _name = "Empty";
+
         public GradeBook()
         {
             grades = new List<float>();
@@ -33,7 +41,34 @@ namespace GradesBook
             return stats;
         }
 
-        private List<float> grades;
+        internal void WriteGrades(TextWriter destination)
+        {
+            for (int i = 0; i < grades.Count; i++)
+            {
+                destination.WriteLine(grades[i]);
+            }
+        }
+
+        public string Name
+        {
+            get { return _name; }
+
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    if (_name != value)
+                    {
+                        NameChangedEventArgs args = new NameChangedEventArgs();
+                        args.ExistingName = _name;
+                        args.NewName = value;
+
+                        NameChanged(this, args);
+                    }
+                    _name = value;
+                }
+            }
+        }
 
     }
 }
