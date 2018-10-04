@@ -1,24 +1,41 @@
+# Import libraries
 library("farff")
 library("RWeka")
 library("RWekajars")
 #search()
 
-#options(java.parameters = "-Xmx2048m")
-options(java.parameters = "-Xmx8000m")
+# Set heap size to 6GB
+options(java.parameters = "-Xmx6g")
 
+# Must call rJava after heap size is set for java
 library(rJava)
 
+# Uncomment to check current heap size or use this function to set a new heap size
+# memory.limit()
+
+# Check if packages installed
 #installed.packages()
 
-# Read soybean dataset from arff file
-# data1 = read.csv(file.choose(), header = FALSE, sep = ",")
-# data1
-# Read edited soybean file, csv
+#' Title
+#' Call to generate files
+#' @return null
+#' @export arff file format
+#'
+#' @examples run function, select file, select/create output file
+generateFile = function() {
+    print("####### Process Start #######")
 
-# Write arff file
-# write.arff(data1, file = "./soy.arff", eol = "\n")
-# > soybean <- read.csv(file="C:/Users/Mobeen/AppData/Local/Temp/soybean.csv.utf8", header=FALSE, row.names=NULL, encoding="UTF-8", sep=",", dec=".", quote="\"", comment.char="")
+    # Create data table from csv data
+    fer2018 <- read.csv(file.choose(), header = FALSE, row.names = NULL, encoding = "UTF-8", sep = ",", dec = ".", quote = "\"", comment.char = "")
 
+    # Write fer2018 table data as arff file with generated attrubte headers
+    writeARFF(fer2018, file.choose(), overwrite = FALSE, chunk.size = 1e+06, relation = deparse(substitute(x)))
+
+    print("####### Process End #######")
+}
 
 fer2018 <- read.csv(file.choose(), header = FALSE, row.names = NULL, encoding = "UTF-8", sep = ",", dec = ".", quote = "\"", comment.char = "")
-write.arff(fer2018, file = "fer2018.arff", eol = "\n")
+rows <- sample(nrow(fer2018), replace = FALSE)
+ferRandom <- fer2018[rows,]
+
+
